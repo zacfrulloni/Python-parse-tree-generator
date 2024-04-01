@@ -56,12 +56,12 @@ for list in converted_list:
 
     print(list)
 
-# # rotate the list and convert to tuples
-# parse_tree = list(zip(*converted_list[::1]))
+# rotate the list and convert to tuples
+parse_tree = list(zip(*converted_list[::1]))
 
-# # remove None values to clean up list:
-# parse_tree = [[val if val is not None else '' for val in row] for row in parse_tree]
+# remove None values to clean up list:
+parse_tree = [[val if val is not None else '' for val in row] for row in parse_tree]
 
-# # remove empty string values if 
-# # rotate the list and we get the following
-# pprint.pprint(parse_tree)
+# remove empty string values if 
+# rotate the list and we get the following
+pprint.pprint(parse_tree)
